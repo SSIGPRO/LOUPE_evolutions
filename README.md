@@ -2,13 +2,15 @@
 
 "A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections", Filippo Martinini, Mauro Mangia, Alex Marchioni, Riccardo Rovatti, and Gianluca Setti.
 
---- Intro
+--- 
+**Introduction** 
 
 Compressed Sensing was recently proposed to reduce the long acquisition time of Magnetic Resonance Imaging by undersampling the signal frequency content and then algorithmically reconstructing the original image.
 We propose a way to significantly improve the classic fast MRI acquisition by exploiting a deep neural network to tackle both problems of frequency sub-sampling and image reconstruction simultaneously, thanks to the introduction of a new loss function to drive the training and the addition of a post-processing non-neural stage. 
 All improvements hinge on the possibility of identifying constraints to which the final image must obey and suitably enforce them.
 
---- Description
+--- 
+**Description**
 
 Our work is based and evolves the models presented in:  
 
@@ -26,6 +28,7 @@ We propose:
 Here * indicates that a post-training processing stage has been used to improve the final reconstruction. This processing stage, by iteratively applying the Dykstra's projection algorithm, finds the real-valued image belonging to the set of images with k-space matching the measurements that is closer to the reconstructed image.
 
 ---
+**File path**
 
 Inside modules:
 1. "models.py" contains the implementation of all the dec(i)|Lj (for i,j in {0,1,2}).
