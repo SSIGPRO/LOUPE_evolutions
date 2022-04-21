@@ -26,7 +26,7 @@ We propose:
 3. dec2|L0 / dec2*|L0, where dec2 sees a new projection block attached to dec1, that forces the reconstructed image to be compliant with the measurament constraint.
 
 Here * indicates that a post-training processing stage has been used to improve the final reconstruction. This processing stage, by iteratively applying the Dykstra's projection algorithm, finds the real-valued image belonging to the set of images with k-space matching the measurements that is closer to the reconstructed image.
-In the provided code one can pass a model (e.g., dec2|L0) to the function "utility.add_Dykstra(model, iterations)" to get a model (e.g., dec2*|L0) that also projects the output using the Dykstra's projection algorithm (it is implemented to run on GPU).
+In the provided code one can pass a model (e.g., dec2|L0) to the function "utility.add_Dykstra(model, iterations)" to get a model (e.g., dec2*|L0) that works the same as the input model but also projects the output using the Dykstra's projection algorithm (Dykstra has been implemented to run on GPU).
 
 ---
 **File path**
