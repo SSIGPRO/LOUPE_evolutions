@@ -1,12 +1,14 @@
 # LOUPE_evolutions
 
-For an in-depth description of our work see:
+"A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections", Filippo Martinini, Mauro Mangia, Alex Marchioni, Riccardo Rovatti, and Gianluca Setti.
 
-"A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections" 
+--- Intro
 
 Compressed Sensing was recently proposed to reduce the long acquisition time of Magnetic Resonance Imaging by undersampling the signal frequency content and then algorithmically reconstructing the original image.
 We propose a way to significantly improve the classic fast MRI acquisition by exploiting a deep neural network to tackle both problems of frequency sub-sampling and image reconstruction simultaneously, thanks to the introduction of a new loss function to drive the training and the addition of a post-processing non-neural stage. 
 All improvements hinge on the possibility of identifying constraints to which the final image must obey and suitably enforce them.
+
+--- Description
 
 Our work is based and evolves the models presented in:  
 
