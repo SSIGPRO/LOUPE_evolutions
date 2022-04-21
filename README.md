@@ -26,12 +26,13 @@ We propose:
 3. dec2|L0 / dec2*|L0, where dec2 sees a new projection block attached to dec1, that forces the reconstructed image to be compliant with the measurament constraint.
 
 Here * indicates that a post-training processing stage has been used to improve the final reconstruction. This processing stage, by iteratively applying the Dykstra's projection algorithm, finds the real-valued image belonging to the set of images with k-space matching the measurements that is closer to the reconstructed image.
+In the provided code one can pass a model (e.g., dec2|L0) to the function "utility.add_Dykstra(model, iterations)" to get a model (e.g., dec2*|L0) that also projects the output using the Dykstra's projection algorithm (it is implemented to run on GPU).
 
 ---
 **File path**
 
 Inside modules:
-1. "models.py" contains the implementation of all the dec(i)|Lj (for i,j in {0,1,2}).
+1. "models.py" contains the implementation of all the models.
 2. "layers.py" implements all the custom structure that build the models.
 3. "utility.py" stores all the functions used to manipulate the models.
 
