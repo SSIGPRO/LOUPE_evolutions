@@ -43,6 +43,6 @@ Inside modules:
 
 ---
 **References**
-1."A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections", Filippo Martinini, Mauro Mangia, Alex Marchioni, Riccardo Rovatti, and Gianluca Setti. DOI: 10.1109/JSTSP.2022.3171082
-2. "Deep-learning-based Optimization of the Under-sampling Pattern in MRI" C. Bahadir‡, A.Q. Wang‡, A.V. Dalca, M.R. Sabuncu. IEEE TCP: Transactions on Computational Imaging. 6. pp. 1139-1152. 2020. doi: 10.1109/TCI.2020.3006727.
+1. "A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections", Filippo Martinini, Mauro Mangia, Alex Marchioni, Riccardo Rovatti, and Gianluca Setti. DOI: 10.1109/JSTSP.2022.3171082
+2. "Deep-learning-based Optimization of the Under-sampling Pattern in MRI" C. Bahadir‡, A.Q. Wang‡, A.V. Dalca, M.R. Sabuncu. IEEE TCP: Transactions on Computational Imaging. 6. pp. 1139-1152. 2020. doi: http://doi.org/10.1109/TCI.2020.3006727.
 3. "Learning-based Optimization of the Under-sampling Pattern in MRI". Cagla D. Bahadir, Adrian V. Dalca, and Mert R. Sabuncu. IPMI: Information Processing in Medical Imaging. 2019. DOI: https://doi.org/10.1007/978-3-030-20351-1_61
