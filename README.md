@@ -1,6 +1,8 @@
 # LOUPE_evolutions
+If you make use of our work, please cite:
 
 "A Deep Learning Method for Optimal Undersampling Patterns and Image Recovery for MRI Exploiting Losses and Projections", Filippo Martinini, Mauro Mangia, Alex Marchioni, Riccardo Rovatti, and Gianluca Setti.
+DOI: 10.1109/JSTSP.2022.3171082
 
 --- 
 **Introduction** 
@@ -12,10 +14,9 @@ All improvements hinge on the possibility of identifying constraints to which th
 --- 
 **Description**
 
-Our work is based and evolves the models presented in:  
+Our work is based and evolves the models presented in [1,2] 
 
-1. "Deep-learning-based Optimization of the Under-sampling Pattern in MRI" C. Bahadir‡, A.Q. Wang‡, A.V. Dalca, M.R. Sabuncu. IEEE TCP: Transactions on Computational Imaging. 6. pp. 1139-1152. 2020. doi: 10.1109/TCI.2020.3006727.
-2. "Learning-based Optimization of the Under-sampling Pattern in MRI". Cagla D. Bahadir, Adrian V. Dalca, and Mert R. Sabuncu. IPMI: Information Processing in Medical Imaging. 2019. DOI: https://doi.org/10.1007/978-3-030-20351-1_61
+
 
 In particular, we refer to the original LOUPE model as "dec0|L0". It consists of an encoder and a decoder. The encoder undersamples a fully sampled MRI scan in the frequency domain and brings it back to the spatial domain. For this purpose the encoder trains a binary mask that decides which k-space samples of the MRI to take or to discard (given a fixed number of elements to keep). The decoder ,instead, reconstructs the discarded frequency by using a U-NET, that takes the undersampled image in the spatial domain and returns a restored version of it. The loss "L0", that computes the mean absolute error (mae) between the ground truth and the reconstructed image, is minimized during training to optimize the model.
 
@@ -36,4 +37,8 @@ Inside modules:
 2. "layers.py" implements all the custom structure that build the models.
 3. "utility.py" stores all the functions used to manipulate the models.
 
+---
+**References**
 
+1. "Deep-learning-based Optimization of the Under-sampling Pattern in MRI" C. Bahadir‡, A.Q. Wang‡, A.V. Dalca, M.R. Sabuncu. IEEE TCP: Transactions on Computational Imaging. 6. pp. 1139-1152. 2020. doi: 10.1109/TCI.2020.3006727.
+2. "Learning-based Optimization of the Under-sampling Pattern in MRI". Cagla D. Bahadir, Adrian V. Dalca, and Mert R. Sabuncu. IPMI: Information Processing in Medical Imaging. 2019. DOI: https://doi.org/10.1007/978-3-030-20351-1_61
